@@ -33,7 +33,7 @@ def test_change_status():
     assert book.status == "borrowed"
 
 
-def test_create_book():
+def test_create_book2():
 	book = Book("Test Book", "Tester", 2020, "fantasy")
 	assert book.name == "Test Book"
 	assert book.author == "Tester"
@@ -42,14 +42,14 @@ def test_create_book():
 	assert book.status == "available"
 
 
-def test_change_status():
+def test_change_status2():
 	book = Book("Book1", "Author1", 2010, "sci-fi")
 	assert book.status == "available"
 	book.status = "borrowed"
 	assert book.status == "borrowed"
 
 
-def test_book_repr():
+def test_book_repr2():
 	book = Book("A", "B", 1999, "thriller")
 	rep = repr(book)
 	assert "Book(" in rep
